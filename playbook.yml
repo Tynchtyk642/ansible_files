@@ -1,0 +1,8 @@
+---
+- name: Install Apache and Upload my Home Page
+  hosts: all
+  become: yes
+  become_user: root 
+
+  roles:
+    - { role: apache_deploy_web, when: ansible_system == 'Linux' }
