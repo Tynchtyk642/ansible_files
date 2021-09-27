@@ -6,3 +6,6 @@
 
   roles:
     - { role: apache_deploy_web, when: ansible_system == 'Linux' }
+
+  roles:
+    - { role: httpd.con }
